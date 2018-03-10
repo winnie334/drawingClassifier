@@ -1,4 +1,5 @@
 const total = 600; // amount of images to load in.
+const hidden_nodes = 75;
 const len = 784; // width * height of each image.
 
 let images;
@@ -29,7 +30,7 @@ function setup() {
   background(220);
   prepareData();
   initializeButtons();
-  nn = new NeuralNetwork(len, 75, 4);
+  nn = new NeuralNetwork(len, hidden_nodes, 4);
   guess();
 }
 
