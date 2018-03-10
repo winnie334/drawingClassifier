@@ -1,4 +1,4 @@
-const total = 300; // amount of images to load in.
+const total = 600; // amount of images to load in.
 const len = 784; // width * height of each image.
 
 let images;
@@ -24,7 +24,7 @@ function preload() {
 function setup() {
   let canvas = createCanvas(280, 280);
   canvas.parent('canvas');
-  strokeWeight(8);
+  strokeWeight(18);
   stroke(0);
   background(220);
   prepareData();
@@ -91,7 +91,7 @@ function evaluate() {
 
   document.getElementById("status").innerHTML = "doing nothing.";
   let percentage = 100 * correct / testing_data.length;
-  document.getElementById("percentage").innerHTML = percentage + "%";
+  document.getElementById("percentage").innerHTML = nf(percentage, 2, 2) + "%";
 }
 
 function guess() {
