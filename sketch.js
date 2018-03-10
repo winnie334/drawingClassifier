@@ -1,4 +1,4 @@
-const total = 1000; // amount of images to load in.
+const total = 600; // amount of images to load in.
 const hidden_nodes = 75;
 const len = 784; // width * height of each image.
 
