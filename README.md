@@ -11,6 +11,8 @@ Using this giant collection of images, the neural network is trained to classify
 ## How to install:
 Download or clone this repository and open *index.html*. It should work straight away. If you run into any issues, please let me know or create a pull request.
 
+(Note that it is sometimes necessary to run this project on a local server)
+
 ## Easily changeable variables:
 If you want to change the code a bit, the following variables are easily changed and can have a significant impact:
   * `const total`, found in *sketch.js*. This variable decides how many images are loaded into memory and used for training.
@@ -21,6 +23,6 @@ If you want to change the code a bit, the following variables are easily changed
   Increasing this number will also increase the time needed to train one generation, so choose wisely.
   
 ## Todo's:
-  -[x] Provide some sort of UI.
-  -[ ] Implement a "keep training" button.
-  -[ ] Make users able to delete parts of their drawing using right click.
+  - [x] Provide some sort of UI.
+  - [ ] Implement a "keep training" button.
+  - [ ] Make users able to delete parts of their drawing using right click.
