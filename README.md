@@ -9,7 +9,8 @@ Using this giant collection of images, the neural network is trained to classify
 [The neural network](https://github.com/CodingTrain/Toy-Neural-Network-JS) used in this project is made by [Daniel Shiffman](https://github.com/shiffman).
 
 ## How to install:
-Download or clone this repository and open *index.html*. It should work straight away. If you run into any issues, please let me know or create a pull request.
+It is possible to run this script [in the browser](https://winnie334.github.io/drawingClassifier/). Alternatively, you can
+download or clone this repository and open *index.html*. It should work straight away. If you run into any issues, please let me know or create a pull request.
 
 (Note that it is sometimes necessary to run this project on a local server)
 
