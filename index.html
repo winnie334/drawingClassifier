@@ -9,7 +9,71 @@
     <script src="lib/matrix.js"></script>
     <script src="sketch.js"></script>
     <script src="processImages.js"></script>
+    <style>
+    button {
+      font-size: 24pt;
+      margin: 10px;
+    }
+    .test {
+      width: 280px;
+      margin: 0px;
+    }
+    #canvas {
+      float:left;
+      margin: 0px 10px 0px 0px;
+    }
+    .resultclass {
+      color: #a50909;
+    }
+    </style>
   </head>
   <body>
+    <img src="data/fish/1.png"></img>
+    <button id="train">Train one generation</button>
+    <button id="test">Test the network</button>
+    <h3 id="info_0">
+      <img src="data/hurricane/1.png"></img>
+      Currently <span id="status" style="color:red">loading images.</span></h3>
+    <h3 id="info_1">
+      <img src="data/mushroom/14.png"></img>
+      Generations trained: <span id="generations">0</span></h3>
+    <h3 id="info_2">
+      <img src="data/rainbow/156.png"></img>
+      Percentage correct: <span id="percentage">0</span></h3>
+
+    <div id="canvas"></div> <!-- drawing canvas goes here -->
+    <h3 id="guess_0">
+      <img src="data/fish/1.png"></img>
+      Probability of being a fish:
+      <span id="chance_0">0</span>
+      %
+    </h3>
+    <h3 id="guess_1">
+      <img src="data/hurricane/1.png"></img>
+      Probability of being a hurricane:
+      <span id="chance_1">0</span>
+      %
+    </h3>
+    <h3 id="guess_2">
+      <img src="data/mushroom/14.png"></img>
+      Probability of being a mushroom:
+      <span id="chance_2">0</span>
+      %
+    </h3>
+    <h3 id="guess_3">
+      <img src="data/rainbow/156.png"></img>
+      Probability of being a rainbow:
+      <span id="chance_3">0</span>
+      %
+    </h3>
+    <h3></h3>
+    <h3>The classifier decides:</h3>
+    <h3 class="resultclass">
+      <img id="resultimg_1" src=""></img>
+      It's a <span id="result"></span>!
+      <img id="resultimg_2" src=""></img>
+    </h3>
+    <p style="clear:left" id="eh"> </p> <!-- float to right stops here -->
+    <button id="clear" class="test">Delete your ugly drawing</button>
   </body>
 </html>
